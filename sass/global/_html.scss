@@ -1,0 +1,16 @@
+html{
+	font-size: .625em; /* fallback IE8+ */
+	font-size: calc(1em * .625); /* IE9-IE11 math fixing. See http://bit.ly/1g4X0bX */
+  	height:100%;
+	}
+
+body {
+	font-family: "Noto Sans",Helvetica,Arial,sans-serif;
+	background-color: #F5F4F0;
+	color:#7B7B7B;
+	font-smooth: always;
+	-webkit-font-smoothing: antialiased;
+  	font-size: 1.4em;
+  	margin:0;
+	overflow-x:hidden;
+	}
