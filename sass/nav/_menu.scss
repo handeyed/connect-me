@@ -1,0 +1,51 @@
+#brand{
+  background-image: url("../img/elements/Logo.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  color: transparent;
+  float: left;
+  height: 28px;
+  width: 160px;
+  margin-top:-65px;
+}
+
+#nav-bar{
+  padding:20px 0;
+
+  ul.nav{
+    text-align:right;
+    margin:0;
+
+    li{
+      display:inline-block;
+      margin-left:0px;
+
+      a{
+        color:#909090;
+        padding:10px 15px;
+        font-size:1.1rem;
+        display:block;
+
+        &:hover{
+          color:#333;
+        }
+
+        &.btn-primary{
+          margin:0;
+          color:#fff;
+          padding:10px 15px;
+
+         // @include stylize-btn-small();
+
+        }
+
+        /*&.btn-secondary{
+          @include stylize-btn-big();
+        }*/
+      }
+    }
+  }
+}
+
+
+

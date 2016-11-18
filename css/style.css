@@ -1,35 +1,804 @@
-/*
-Error: Invalid CSS after "...'global/colors'": expected selector or at-rule, was "@import 'global..."
-        on line 2 of /Users/jjato/Documents/work/Healthshare/Connectme/git-repo/connect-me/sass/style.scss
+/* Mixins */
+/* line 1, ../sass/global/_html.scss */
+html {
+  font-size: .625em;
+  /* fallback IE8+ */
+  font-size: calc(1em * .625);
+  /* IE9-IE11 math fixing. See http://bit.ly/1g4X0bX */
+  height: 100%;
+}
+/* line 6, ../sass/global/_html.scss */
+html body {
+  font-family: "Noto Sans", Helvetica, Arial, sans-serif;
+  background-color: #f5f4f0;
+  color: #7B7B7B;
+  font-smooth: always;
+  -webkit-font-smoothing: antialiased;
+  font-size: 1.4em;
+  margin: 0;
+  overflow-x: hidden;
+}
 
-1: @import 'global/colors'
-2: @import 'global/html'
+/* line 1, ../sass/nav/_menu.scss */
+#brand {
+  background-image: url("../img/elements/Logo.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  color: transparent;
+  float: left;
+  height: 28px;
+  width: 160px;
+  margin-top: -65px;
+}
 
-Backtrace:
-/Users/jjato/Documents/work/Healthshare/Connectme/git-repo/connect-me/sass/style.scss:2
-/Users/jjato/.rvm/gems/ruby-2.1.2/gems/sass-3.4.22/lib/sass/scss/parser.rb:1189:in `expected'
-/Users/jjato/.rvm/gems/ruby-2.1.2/gems/sass-3.4.22/lib/sass/scss/parser.rb:1125:in `expected'
-/Users/jjato/.rvm/gems/ruby-2.1.2/gems/sass-3.4.22/lib/sass/scss/parser.rb:42:in `parse'
-/Users/jjato/.rvm/gems/ruby-2.1.2/gems/sass-3.4.22/lib/sass/engine.rb:406:in `_to_tree'
-/Users/jjato/.rvm/gems/ruby-2.1.2/gems/sass-3.4.22/lib/sass/engine.rb:281:in `render'
-/Users/jjato/.rvm/gems/ruby-2.1.2/gems/compass-import-once-1.0.5/lib/compass/import-once/engine.rb:17:in `block in render'
-/Users/jjato/.rvm/gems/ruby-2.1.2/gems/compass-import-once-1.0.5/lib/compass/import-once/engine.rb:29:in `with_import_scope'
-/Users/jjato/.rvm/gems/ruby-2.1.2/gems/compass-import-once-1.0.5/lib/compass/import-once/engine.rb:16:in `render'
-/Users/jjato/.rvm/gems/ruby-2.1.2/gems/sass-3.4.22/lib/sass/plugin/compiler.rb:494:in `update_stylesheet'
-/Users/jjato/.rvm/gems/ruby-2.1.2/gems/sass-3.4.22/lib/sass/plugin/compiler.rb:215:in `block in update_stylesheets'
-/Users/jjato/.rvm/gems/ruby-2.1.2/gems/sass-3.4.22/lib/sass/plugin/compiler.rb:209:in `each'
-/Users/jjato/.rvm/gems/ruby-2.1.2/gems/sass-3.4.22/lib/sass/plugin/compiler.rb:209:in `update_stylesheets'
-/Users/jjato/.rvm/gems/ruby-2.1.2/gems/sass-3.4.22/lib/sass/plugin/compiler.rb:473:in `on_file_changed'
-/Users/jjato/.rvm/gems/ruby-2.1.2/gems/sass-3.4.22/lib/sass/plugin/compiler.rb:331:in `block in watch'
-/Users/jjato/.rvm/gems/ruby-2.1.2/gems/sass-3.4.22/vendor/listen/lib/listen/listener.rb:252:in `call'
-/Users/jjato/.rvm/gems/ruby-2.1.2/gems/sass-3.4.22/vendor/listen/lib/listen/listener.rb:252:in `on_change'
-/Users/jjato/.rvm/gems/ruby-2.1.2/gems/sass-3.4.22/vendor/listen/lib/listen/listener.rb:290:in `block in initialize_adapter'
-/Users/jjato/.rvm/gems/ruby-2.1.2/gems/sass-3.4.22/vendor/listen/lib/listen/adapter.rb:254:in `call'
-/Users/jjato/.rvm/gems/ruby-2.1.2/gems/sass-3.4.22/vendor/listen/lib/listen/adapter.rb:254:in `report_changes'
-/Users/jjato/.rvm/gems/ruby-2.1.2/gems/sass-3.4.22/vendor/listen/lib/listen/adapter.rb:323:in `poll_changed_directories'
-/Users/jjato/.rvm/gems/ruby-2.1.2/gems/sass-3.4.22/vendor/listen/lib/listen/adapter.rb:299:in `block in start_poller'
-*/
-body:before {
-  white-space: pre;
-  font-family: monospace;
-  content: "Error: Invalid CSS after \"...'global/colors'\": expected selector or at-rule, was \"@import 'global...\"\A         on line 2 of /Users/jjato/Documents/work/Healthshare/Connectme/git-repo/connect-me/sass/style.scss\A \A 1: @import 'global/colors'\A 2: @import 'global/html'"; }
+/* line 12, ../sass/nav/_menu.scss */
+#nav-bar {
+  padding: 20px 0;
+}
+/* line 15, ../sass/nav/_menu.scss */
+#nav-bar ul.nav {
+  text-align: right;
+  margin: 0;
+}
+/* line 19, ../sass/nav/_menu.scss */
+#nav-bar ul.nav li {
+  display: inline-block;
+  margin-left: 0px;
+}
+/* line 23, ../sass/nav/_menu.scss */
+#nav-bar ul.nav li a {
+  color: #909090;
+  padding: 10px 15px;
+  font-size: 1.1rem;
+  display: block;
+  /*&.btn-secondary{
+    @include stylize-btn-big();
+  }*/
+}
+/* line 29, ../sass/nav/_menu.scss */
+#nav-bar ul.nav li a:hover {
+  color: #333;
+}
+/* line 33, ../sass/nav/_menu.scss */
+#nav-bar ul.nav li a.btn-primary {
+  margin: 0;
+  color: #fff;
+  padding: 10px 15px;
+}
+
+/*- Colors -*/
+/* line 5, ../sass/_old.scss */
+.orange {
+  color: #FF9F5F;
+}
+
+/* line 6, ../sass/_old.scss */
+.darkorange {
+  color: #BF6B32;
+}
+
+/* line 7, ../sass/_old.scss */
+.lightorange {
+  color: #FFC69F;
+}
+
+/* line 9, ../sass/_old.scss */
+.blue {
+  color: #69D9DC;
+}
+
+/* line 10, ../sass/_old.scss */
+.darkblue {
+  color: #2D979A;
+}
+
+/* line 11, ../sass/_old.scss */
+.lightblue {
+  color: #BFFDFF;
+}
+
+/* line 13, ../sass/_old.scss */
+.green {
+  color: #E5FF88;
+}
+
+/* line 15, ../sass/_old.scss */
+.grey {
+  color: #AFAFAF;
+}
+
+/* line 16, ../sass/_old.scss */
+.darkgrey {
+  color: #4E4E4E;
+}
+
+/* line 17, ../sass/_old.scss */
+.white {
+  color: #fff;
+}
+
+/* line 18, ../sass/_old.scss */
+.black {
+  color: #7B7B7B;
+}
+
+/*- Links and buttons -*/
+/* line 22, ../sass/_old.scss */
+a {
+  color: #FF9F5F;
+  text-decoration: none;
+  transition: all ease .2s;
+}
+
+/* line 27, ../sass/_old.scss */
+a:hover {
+  color: #FFC69F;
+}
+
+/* line 29, ../sass/_old.scss */
+.btn-primary {
+  background: #ff9f5f none repeat scroll 0 0;
+  border-radius: 5px;
+  color: #fff;
+  display: inline-block;
+  letter-spacing: 0.25rem;
+  line-height: 1.3rem;
+  margin: 10px 0;
+  padding: 15px 25px;
+  text-transform: uppercase;
+  transition: all 0.5s ease 0s;
+}
+
+/* line 41, ../sass/_old.scss */
+.btn-primary:hover {
+  background: #BF6B32 none repeat scroll 0 0;
+  text-decoration: none;
+}
+
+/* line 45, ../sass/_old.scss */
+.btn-primary.big {
+  font-size: 1.8rem;
+  letter-spacing: 0.2rem;
+  line-height: 1.8rem;
+  margin: 50px 0;
+  padding: 25px 35px;
+}
+
+/* line 52, ../sass/_old.scss */
+.btn-primary.outlined {
+  background: transparent;
+  color: #ff9f5f !important;
+  border: 1px solid #ff9f5f;
+}
+
+/* line 57, ../sass/_old.scss */
+.btn-primary.outlined:hover {
+  background: #BF6B32;
+  color: #fff !important;
+  border: 1px solid #ff9f5f;
+}
+
+/* line 64, ../sass/_old.scss */
+.btn-secondary {
+  display: inline-block;
+  background: #69D9DC none repeat scroll 0 0;
+  border-radius: 5px;
+  font-size: 0.85rem;
+  letter-spacing: 0.2rem;
+  line-height: 1.2rem;
+  margin: 20px 0;
+  padding: 10px 20px;
+  text-transform: uppercase;
+  color: #fff;
+  transition: all 0.5s ease 0s;
+}
+
+/* line 77, ../sass/_old.scss */
+.btn-secondary:hover {
+  background: #2D979A none repeat scroll 0 0;
+  text-decoration: none;
+}
+
+/*- Texts and Titles -*/
+/* line 84, ../sass/_old.scss */
+h1, .h1 {
+  font-size: 3rem;
+  font-weight: 100;
+  letter-spacing: -0.5px;
+  line-height: 4.2rem;
+  margin: 10px 0 30px;
+}
+
+/* line 91, ../sass/_old.scss */
+h2, .h2 {
+  font-size: 3.5rem;
+  font-weight: 100;
+  line-height: 5.5rem;
+  margin-bottom: 20px;
+}
+
+/* line 97, ../sass/_old.scss */
+h3, .h3 {
+  font-size: 1.4rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin: 10px 0;
+  font-weight: 100;
+}
+
+/* line 104, ../sass/_old.scss */
+h4, .h4 {
+  font-size: 1.5rem;
+  margin: 2rem 0 2.4rem;
+  font-weight: 100;
+}
+
+/* line 105, ../sass/_old.scss */
+p {
+  font-size: 1.5rem;
+  line-height: 2.6rem;
+}
+
+/* line 106, ../sass/_old.scss */
+.small {
+  font-size: 1.3rem;
+}
+
+/* line 108, ../sass/_old.scss */
+.serif {
+  font-family: "Noto Serif", "Times New Roman", Times, serif;
+}
+
+/* line 111, ../sass/_old.scss */
+.italic {
+  font-style: italic;
+}
+
+/* line 114, ../sass/_old.scss */
+.quote {
+  font-size: 1.2em;
+  font-weight: 100;
+  letter-spacing: 0.5px;
+  margin: 20px 0 -5px;
+}
+
+/* line 121, ../sass/_old.scss */
+ul {
+  list-style-image: url("../img/elements/dot.png");
+  padding-left: 10px;
+}
+
+/* line 125, ../sass/_old.scss */
+ul li {
+  padding-left: 10px;
+  margin-bottom: 10px;
+}
+
+/* line 129, ../sass/_old.scss */
+ul.blue-bullets {
+  list-style-image: url("../img/elements/dot-blue.png");
+}
+
+/*If list-inline*/
+/* line 133, ../sass/_old.scss */
+ul.blue-bullets li > span {
+  background: url("../img/elements/dot-blue.png");
+  width: 6px;
+  height: 6px;
+  display: inline-block;
+  margin: 2px 7px 2px 0;
+}
+
+/* line 140, ../sass/_old.scss */
+ul.list-inline li {
+  display: inline-block;
+}
+
+/*- Grid, blocs -*/
+/* line 146, ../sass/_old.scss */
+#content {
+  position: relative;
+  min-height: 100vh;
+  background-color: #F5F4F0;
+}
+
+/* line 151, ../sass/_old.scss */
+.wrapper {
+  padding: 0 10vw;
+  position: relative;
+  clear: both;
+}
+
+/* line 156, ../sass/_old.scss */
+.bloc {
+  width: 45%;
+}
+
+/* line 159, ../sass/_old.scss */
+.grid3 {
+  display: inline-flex;
+  text-align: center;
+  margin: 20px 0;
+}
+
+/* line 164, ../sass/_old.scss */
+.grid3 > div {
+  max-width: 33.3%;
+  min-width: 31.5%;
+  padding: 1%;
+  text-align: center;
+}
+
+/* line 170, ../sass/_old.scss */
+.left {
+  float: left;
+}
+
+/* line 173, ../sass/_old.scss */
+.right {
+  float: right;
+}
+
+/* line 176, ../sass/_old.scss */
+.right > img {
+  float: right;
+}
+
+/*- Imgs and misc -*/
+/* line 180, ../sass/_old.scss */
+img {
+  max-width: 100%;
+  width: auto;
+}
+
+/* line 181, ../sass/_old.scss */
+img.apost {
+  min-width: 70px;
+  max-width: 90px;
+}
+
+/* line 185, ../sass/_old.scss */
+.Illustration {
+  max-width: 50%;
+}
+
+/* line 188, ../sass/_old.scss */
+.img-circle {
+  border-radius: 300px;
+}
+
+/* line 191, ../sass/_old.scss */
+hr {
+  border: 0;
+  height: 1px;
+  background: #dedede;
+  display: inline-block;
+  width: 100%;
+}
+
+/* line 192, ../sass/_old.scss */
+hr.undertitle {
+  width: 25%;
+  max-width: 110px;
+  height: 3px;
+  margin: 20px 0;
+  background: #D8D8D8;
+  display: inline-block;
+}
+
+/* line 200, ../sass/_old.scss */
+hr.undertitle.blue {
+  background: #69D9DC;
+}
+
+/* line 203, ../sass/_old.scss */
+hr.undertitle.orange {
+  background: #FF9F5F;
+}
+
+/* line 206, ../sass/_old.scss */
+.clear {
+  clear: both;
+}
+
+/* line 209, ../sass/_old.scss */
+blockquote {
+  width: 100%;
+  margin: auto;
+  padding: 0px 50px;
+  display: flex;
+  flex-direction: row;
+}
+
+/* line 216, ../sass/_old.scss */
+blockquote .quote {
+  margin-bottom: 40px;
+}
+
+/* line 219, ../sass/_old.scss */
+blockquote h3 {
+  text-transform: inherit;
+  font-size: 2rem;
+}
+
+/* line 223, ../sass/_old.scss */
+blockquote h4 {
+  text-transform: uppercase;
+  font-size: 1rem;
+  margin-top: 5px;
+}
+
+/* line 228, ../sass/_old.scss */
+cite {
+  font-style: normal;
+}
+
+/* line 230, ../sass/_old.scss */
+.testimonial-slide {
+  overflow: hidden;
+}
+
+/* Slick styling */
+/* line 235, ../sass/_old.scss */
+.slick-list {
+  width: 90%;
+  float: left;
+  overflow: hidden;
+}
+
+/* line 241, ../sass/_old.scss */
+.slick-dots {
+  list-style: outside none none;
+  padding: 0;
+  text-align: center;
+  width: 10%;
+  float: right;
+}
+
+/* line 248, ../sass/_old.scss */
+.slick-dots li {
+  margin-bottom: 30px;
+}
+
+/* line 251, ../sass/_old.scss */
+.slick-dots li button {
+  background: #EDEDED none repeat scroll 0 0;
+  border: 0 none;
+  border-radius: 100px;
+  color: transparent;
+  height: 20px;
+  width: 20px;
+  transition: all ease .5s;
+}
+
+/* line 260, ../sass/_old.scss */
+.slick-dots li.slick-active button {
+  background: #FFA178 none repeat scroll 0 0;
+}
+
+/*-- NAV --*/
+/* line 265, ../sass/_old.scss */
+#brand {
+  background-image: url("../img/elements/Logo.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  color: transparent;
+  float: left;
+  height: 28px;
+  width: 160px;
+  margin-top: -65px;
+}
+
+/* line 275, ../sass/_old.scss */
+#nav-bar {
+  padding: 20px 0;
+}
+
+/* line 278, ../sass/_old.scss */
+#nav-bar ul.nav {
+  text-align: right;
+  margin: 0;
+}
+
+/* line 282, ../sass/_old.scss */
+#nav-bar ul.nav li {
+  display: inline-block;
+  margin-left: 0px;
+}
+
+/* line 286, ../sass/_old.scss */
+#nav-bar ul.nav li a {
+  color: #909090;
+  padding: 10px 15px;
+  font-size: 1.1rem;
+  display: block;
+}
+
+/* line 292, ../sass/_old.scss */
+#nav-bar ul.nav li a:hover {
+  color: #333;
+}
+
+/* line 296, ../sass/_old.scss */
+#nav-bar ul.nav li a.btn-primary {
+  margin: 0;
+  color: #fff;
+  padding: 10px 15px;
+}
+
+/*-- Sections --*/
+/* line 303, ../sass/_old.scss */
+section {
+  height: auto;
+  min-height: 70vh;
+  padding-top: 10vh;
+}
+
+/*--- Lead Intro ---*/
+/* line 311, ../sass/_old.scss */
+#leadIntro {
+  border-bottom: 1px solid #D8D8D8;
+  padding-top: 15vh;
+  min-height: 75vh;
+}
+
+/* line 316, ../sass/_old.scss */
+#leadIntro img {
+  margin-top: 80px;
+}
+
+/*--- keypoints ---*/
+/* line 322, ../sass/_old.scss */
+.keypoint {
+  border-bottom: 1px solid #D8D8D8;
+  background: #fff;
+  padding: 10vh 0;
+}
+
+/* line 327, ../sass/_old.scss */
+.keypoint h2 {
+  margin-top: 10vh;
+  font-size: 2.5rem;
+  line-height: 3.5rem;
+}
+
+/* line 328, ../sass/_old.scss */
+.keypoint .Illustration {
+  margin-top: 10vh;
+}
+
+/*--- Coming soon ---*/
+/* line 334, ../sass/_old.scss */
+#coming-soon {
+  background: #4E4E4E;
+  height: auto;
+  min-height: 140px;
+  padding-bottom: 10vh;
+}
+
+/* line 340, ../sass/_old.scss */
+#coming-soon > * {
+  text-align: center;
+}
+
+/* line 341, ../sass/_old.scss */
+#coming-soon ul.blue-bullets li {
+  display: inline;
+}
+
+/*--- Testimonials ---*/
+/* line 345, ../sass/_old.scss */
+#testimonials {
+  background: #FAFAFA;
+  height: auto;
+  min-height: 250px;
+  padding: 20vh 0;
+}
+
+/* line 351, ../sass/_old.scss */
+#testimonials blockquote {
+  background: url("../img//elementsquote-icon.png") no-repeat scroll left top;
+  background-size: 90px;
+  width: 80%;
+}
+
+/* line 356, ../sass/_old.scss */
+#testimonials .avatar {
+  width: 25%;
+  padding-right: 20px;
+  margin-right: 20px;
+}
+
+/* line 361, ../sass/_old.scss */
+#testimonials .avatar img {
+  max-width: 200px;
+}
+
+/*--- highlights ---*/
+/* line 368, ../sass/_old.scss */
+#highlights {
+  background: #4E4E4E;
+  height: auto;
+  min-height: 540px;
+  padding: 10vh 0;
+}
+
+/* line 374, ../sass/_old.scss */
+#highlights > * {
+  text-align: center;
+}
+
+/* line 375, ../sass/_old.scss */
+#highlights h4 {
+  text-transform: uppercase;
+  margin: 20px 0 5px;
+}
+
+/* line 376, ../sass/_old.scss */
+#highlights h3 {
+  margin-top: 35px;
+}
+
+/* line 377, ../sass/_old.scss */
+#highlights .grid3 {
+  margin: 90px 0;
+}
+
+/* line 378, ../sass/_old.scss */
+#highlights .grid3 p {
+  padding: 0 30px;
+}
+
+/*--- Get Started ---*/
+/* line 382, ../sass/_old.scss */
+#get-started {
+  height: auto;
+  min-height: 550px;
+  padding: 10vh 0;
+}
+
+/* line 387, ../sass/_old.scss */
+#get-started > * {
+  text-align: center;
+}
+
+/* line 389, ../sass/_old.scss */
+#get-started #steps {
+  background: url(../img/Get-started.png) no-repeat scroll center bottom;
+  min-height: 300px;
+  width: 70%;
+}
+
+/* line 394, ../sass/_old.scss */
+#get-started #steps.grid3 div {
+  margin-top: 150px;
+}
+
+/* line 397, ../sass/_old.scss */
+#get-started #steps h4 {
+  text-transform: uppercase;
+  color: #CDCCCD;
+}
+
+/* line 401, ../sass/_old.scss */
+#get-started #steps div.active img {
+  min-width: 110px;
+  margin-top: -30px;
+}
+
+/* line 405, ../sass/_old.scss */
+#get-started #steps div.active h4 {
+  color: #69D9DC;
+  font-size: 1.7rem;
+}
+
+/*--- pricing ---*/
+/* line 412, ../sass/_old.scss */
+#pricing {
+  background: #4E4E4E;
+  height: auto;
+  min-height: 540px;
+  padding: 10vh 0;
+}
+
+/* line 418, ../sass/_old.scss */
+#pricing > * {
+  text-align: center;
+}
+
+/* line 419, ../sass/_old.scss */
+#pricing hr {
+  margin: 80px auto -120px;
+  width: 90%;
+  background: #666;
+}
+
+/* line 420, ../sass/_old.scss */
+#pricing .btn-primary.big {
+  margin: 80px auto 10px;
+}
+
+/* line 422, ../sass/_old.scss */
+#pricing p.quote {
+  font-size: 2.5rem;
+  font-weight: 100;
+  line-height: 3.6rem;
+  margin: 40px auto 30px;
+  padding-right: 40px;
+}
+
+/* line 429, ../sass/_old.scss */
+#pricing img.apost {
+  margin: 40px 40px 40px 0;
+}
+
+/* line 430, ../sass/_old.scss */
+#pricing p.h3 {
+  text-transform: inherit;
+  font-size: 1.9rem;
+}
+
+/* line 431, ../sass/_old.scss */
+#pricing p.h4 {
+  text-transform: uppercase;
+  font-size: 1.3rem;
+  margin-top: 0;
+}
+
+/*--- Partners ---*/
+/* line 435, ../sass/_old.scss */
+#partners {
+  height: auto;
+  min-height: 540px;
+  padding: 10vh 0;
+}
+
+/* line 440, ../sass/_old.scss */
+#partners > * {
+  text-align: center;
+}
+
+/* line 441, ../sass/_old.scss */
+#partners hr {
+  margin: 50px 0;
+}
+
+/* line 442, ../sass/_old.scss */
+#partners ul li {
+  margin: 2vh 1vw;
+}
+
+/* line 443, ../sass/_old.scss */
+#partners ul li img {
+  max-width: 170px;
+  width: 100%;
+}
+
+/*--- Footer ---*/
+/* line 447, ../sass/_old.scss */
+footer {
+  background: #FF9F5F;
+  height: auto;
+  min-height: 250px;
+  padding: 10vh 0;
+}
+
+/* line 453, ../sass/_old.scss */
+footer > * {
+  text-align: center;
+}
+
+/* line 454, ../sass/_old.scss */
+footer a {
+  color: #fff;
+}
+
+/* line 455, ../sass/_old.scss */
+footer .nav-footer-top ul li {
+  margin: 1vh .5vw;
+}
+
+/* line 456, ../sass/_old.scss */
+footer .nav-footer-middle ul li {
+  margin: 20px 1.5vw;
+}

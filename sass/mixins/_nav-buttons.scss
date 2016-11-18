@@ -1,0 +1,18 @@
+@mixin border-radius($radius) {
+  -webkit-border-radius: $radius;
+  -moz-border-radius: $radius;
+  -ms-border-radius: $radius;
+  border-radius: $radius;
+}
+
+@mixin stylize-btn-small() {
+  @include border-radius(10px);
+  font-size: 0.80rem;
+
+}
+
+@mixin stylize-btn-big() {
+  @include border-radius(5px);
+  font-size: 1.20rem;
+
+}
