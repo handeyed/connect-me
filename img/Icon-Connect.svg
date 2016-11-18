@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="74px" height="62px" viewBox="0 0 74 62" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 41 (35326) - http://www.bohemiancoding.com/sketch -->
+    <title>Icon-Connect</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Design-Desktop" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Homepage" transform="translate(-928.000000, -5866.000000)">
+            <g id="3-Steps" transform="translate(20.000000, 5523.000000)">
+                <g id="Icon-Connect" transform="translate(909.000000, 344.000000)">
+                    <g id="Group-9" transform="translate(7.000000, 0.000000)" stroke="#D9D9D9" stroke-width="2">
+                        <ellipse id="Oval" fill="#F8F8F7" cx="30" cy="29.9870418" rx="30" ry="29.9870418"></ellipse>
+                        <path d="M49.0909091,53.1193185 L49.0909091,51.089741 C49.0909091,48.1551 47.5172727,45.4453619 44.9686364,43.9896273 L36.8263636,39.3211901" id="Shape"></path>
+                        <path d="M23.175,39.3198271 L15.0327273,43.9882642 C12.4827273,45.4453619 10.9090909,48.1551 10.9090909,51.089741 L10.9090909,53.1193185" id="Shape"></path>
+                        <path d="M30.4399996,43.0995384 L30.4399996,43.0995384 C24.6745098,43.0995384 20,36.9684868 20,31.0568791 L20,25.7045861 C20,19.7929784 24.6745098,15 30.4399996,15 L30.4399996,15 C36.2054893,15 40.8799992,19.7929784 40.8799992,25.7045861 L40.8799992,31.0568791 C40.8799992,36.9684868 36.2054893,43.0995384 30.4399996,43.0995384 L30.4399996,43.0995384 Z" id="Shape"></path>
+                    </g>
+                    <g id="Group-10" transform="translate(0.000000, 11.000000)">
+                        <polyline id="Shape" stroke="#D9D9D9" stroke-width="2" transform="translate(63.161299, 7.421903) rotate(13.000000) translate(-63.161299, -7.421903) " points="70.1612987 1.42190297 68.5020395 13.421903 56.1612987 11.8084576"></polyline>
+                        <path d="M6.01585195,20.2258489 L5.23147731,15.6564815 L7.62248163,16.0349342 L8.53261881,18.472521 C8.53261881,18.472521 6.45850877,18.0540729 6.45850877,18.0540729 C6.45850877,18.0540729 6.01585195,20.2258489 6.01585195,20.2258489 Z" id="Rectangle-2" fill="#F2F1EF" transform="translate(6.882048, 17.941165) rotate(20.000000) translate(-6.882048, -17.941165) "></path>
+                        <polyline id="Shape" stroke="#D9D9D9" stroke-width="2" transform="translate(9.224941, 26.875780) rotate(-156.000000) translate(-9.224941, -26.875780) " points="16.2249407 20.9157801 14.5656815 32.8357802 2.22494074 31.2330911"></polyline>
+                        <path d="M66.4990649,17.9608804 L65.4334476,14.4216273 L67.982515,14.874605 L68.6448053,16.9510695 L66.6567737,16.7025014 C66.6567737,16.7025014 66.4990649,17.9608804 66.4990649,17.9608804 Z" id="Rectangle-2" fill="#F2F1EF" transform="translate(67.039126, 16.191254) rotate(-165.000000) translate(-67.039126, -16.191254) "></path>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

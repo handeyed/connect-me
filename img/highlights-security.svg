@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="173px" height="55px" viewBox="0 0 173 55" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 41 (35326) - http://www.bohemiancoding.com/sketch -->
+    <title>highlights-security</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Design-Desktop" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round">
+        <g id="Homepage" transform="translate(-634.000000, -5287.000000)" stroke-width="2">
+            <g id="Highlights" transform="translate(0.000000, 4828.000000)">
+                <g id="highlights-security" transform="translate(635.000000, 460.000000)">
+                    <polyline id="Stroke-3577" stroke="#9F9F9F" opacity="0.443217844" transform="translate(85.320984, 30.324219) scale(-1, 1) translate(-85.320984, -30.324219) " points="0.255208333 27.8797738 34.4353779 27.8797743 58.0255995 8.32421875 105.206043 52.3242188 128.796264 27.8797743 170.386759 27.8797738"></polyline>
+                    <path d="M74.6510417,19.953125 L74.6510417,9.9765625 C74.6510417,4.48945313 79.1404948,0 84.6276042,0 C90.1147135,0 94.6041667,4.48945313 94.6041667,9.9765625 L94.6041667,19.953125" id="Stroke-337" stroke="#E8E8E8"></path>
+                    <path d="M101.255208,33.2552083 C101.255208,42.4386341 93.8110299,49.8828125 84.6276042,49.8828125 C75.4441784,49.8828125 68,42.4386341 68,33.2552083 C68,24.0717826 75.4441784,16.6276042 84.6276042,16.6276042 C93.8110299,16.6276042 101.255208,24.0717826 101.255208,33.2552083 Z" id="Stroke-338" stroke="#E8E8E8" fill="#4E4E4E"></path>
+                    <path d="M84.6276042,34.9179688 L84.6276042,39.90625" id="Stroke-339" stroke="#E8E8E8"></path>
+                    <path d="M84.6276042,24.9414062 C87.3827982,24.9414062 89.6158854,27.1744935 89.6158854,29.9296875 C89.6158854,32.6848815 87.3827982,34.9179688 84.6276042,34.9179688 C81.8724102,34.9179688 79.6393229,32.6848815 79.6393229,29.9296875 C79.6393229,27.1744935 81.8724102,24.9414062 84.6276042,24.9414062 L84.6276042,24.9414062 Z" id="Stroke-340" stroke="#E8E8E8"></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

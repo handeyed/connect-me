@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="58px" height="70px" viewBox="0 0 58 58" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 41 (35326) - http://www.bohemiancoding.com/sketch -->
+    <title>highlights-secure</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Secure" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round">
+        <g id="Homepage" transform="translate(-308.000000, -5073.000000)" stroke="#69D9DC" stroke-width="2">
+            <g id="Highlights" transform="translate(0.000000, 4828.000000)">
+                <g id="Secure" transform="translate(235.000000, 246.000000)">
+                    <g id="highlights-secure" transform="translate(74.000000, 0.000000)">
+                        <path d="M28,56 L28,0" id="Stroke-958"></path>
+                        <path d="M2.978,28 L53.022,28" id="Stroke-959"></path>
+                        <path d="M28,0 C20,6 8,10 0,10 C0,28.666 9.334,48 28,56 C46.666,48 56,28.666 56,10 C48,10 36,6 28,0 L28,0 Z" id="Stroke-960"></path>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

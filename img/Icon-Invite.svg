@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="67px" height="60px" viewBox="0 0 67 60" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 41 (35326) - http://www.bohemiancoding.com/sketch -->
+    <title>Icon-Invite</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Design-Desktop" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Homepage" transform="translate(-687.000000, -5869.000000)" stroke-width="2" stroke="#D9D9D9">
+            <g id="3-Steps" transform="translate(20.000000, 5523.000000)">
+                <g id="Icon-Invite" transform="translate(668.000000, 347.000000)">
+                    <g id="Focused">
+                        <polyline id="Shape" fill="#FBFBFB" points="11.8181818 13.4509569 0 22.0191388 0 57.4736842 65 57.4736842 65 22.0191388 53.0340909 13.3032297"></polyline>
+                        <polyline id="Shape" fill="#FBFBFB" points="11.6315789 28.5191388 11.6315789 0 52.9952153 0 52.9952153 28.5191388"></polyline>
+                        <path d="M0,22.0191388 L65,57.4736842" id="Shape"></path>
+                        <path d="M65,22.0191388 L32.5,39.7464115" id="Shape"></path>
+                        <g id="Group-6" transform="translate(26.000000, 15.052632)">
+                            <path d="M6.28764949,0.108710596 L6.28764949,12.4505886" id="Shape"></path>
+                            <path d="M0.114043844,6.27964962 L12.4612551,6.27964962" id="Shape"></path>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
