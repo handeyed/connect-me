@@ -1,16 +1,39 @@
-html {
-	font-size: .625em; /* fallback IE8+ */
-	font-size: calc(1em * .625); /* IE9-IE11 math fixing. See http://bit.ly/1g4X0bX */
-	height: 100%;
+//PATH
 
-	body {
-		font-family: $mainFont;
-		background-color: $backgroundColor;
-		color: $black;
-		font-smooth: always;
-		-webkit-font-smoothing: antialiased;
-		font-size: 1.4em;
-		margin: 0;
-		overflow-x: hidden;
-	}
+$get-path-to :'../';
+
+html {
+  font-size: .625em; /* fallback IE8+ */
+  font-size: calc(1em * .625); /* IE9-IE11 math fixing. See http://bit.ly/1g4X0bX */
+  height: 100%;
+
+  body {
+    font-family: $fontMain;
+    background-color: $backgroundColor;
+    color: $greyDark;
+    font-smooth: always;
+    -webkit-font-smoothing: antialiased;
+    font-size: 1.4em;
+    margin: 0;
+    overflow-x: hidden;
+
+    .wrapper {
+      padding: 0 10vw;
+      position: relative;
+      clear: both;
+    }
+
+    #content {
+      position: relative;
+      min-height: 100vh;
+      background-color: $greyLightExtra;
+
+      section {
+        height: auto;
+        min-height: 50vh;
+        padding: 10vh 0;
+
+      }
+    }
+  }
 }

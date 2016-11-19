@@ -1,0 +1,31 @@
+.clear {
+  clear:both;
+}
+
+.bloc {
+  width: 45%;
+}
+
+.grid3 {
+  display: inline-flex;
+  text-align: center;
+  margin: 20px 0;
+
+  > div {
+    max-width: 33.3%;
+    min-width: 31.5%;
+    padding: 1%;
+    text-align: center;
+  }
+}
+
+.left {
+  float:left;
+}
+.right {
+  float: right;
+
+  > img {
+    float: right
+  }
+}

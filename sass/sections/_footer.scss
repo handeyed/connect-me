@@ -1,0 +1,19 @@
+footer {
+  background: $mainColor;
+  height:auto;
+  min-height:250px;
+  padding:10vh 0;
+
+  > * {
+    text-align:center;
+  }
+  a {
+    color:#fff;
+  }
+  .nav-footer-top ul li {
+    margin:1vh .5vw
+  }
+  .nav-footer-middle ul li {
+    margin:20px 1.5vw
+  }
+}

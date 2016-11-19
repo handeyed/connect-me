@@ -1,0 +1,26 @@
+img {
+  max-width: 100%;
+  width: auto;
+
+  &.apost {
+    min-width: 70px;
+    max-width: 90px;
+  }
+  &.Illustration {
+    max-width:50%;
+  }
+  &.circle {
+    border-radius:300px;
+  }
+}
+
+// HR
+
+
+hr {
+  border: 0;
+  height: 1px;
+  background: #dedede;
+  display: inline-block;
+  width: 100%;
+}

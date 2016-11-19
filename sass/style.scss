@@ -1,9 +1,22 @@
 @import 'global/colors';
 @import 'global/fonts';
 
-/* Mixins */
+// Mixins
 @import 'mixins/nav-buttons';
 
 @import 'global/html';
+
 @import 'nav/menu';
-@import 'old'
+@import 'nav/buttons';
+
+@import 'layout/grid-floaters';
+@import 'layout/titles';
+@import 'layout/text';
+@import 'layout/img-deco';
+
+@import 'plugins/slick';
+
+@import 'sections/testimonials';
+@import 'sections/footer';
+
+@import 'old';

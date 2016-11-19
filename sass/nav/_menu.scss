@@ -1,5 +1,5 @@
 #brand{
-  background-image: url("../img/elements/Logo.svg");
+  background-image: url("#{$get-path-to}img/elements/Logo.svg");
   background-repeat: no-repeat;
   background-size: contain;
   color: transparent;
@@ -21,31 +21,23 @@
       margin-left:0px;
 
       a{
-        color:#909090;
+        color: $grey;;
         padding:10px 15px;
         font-size:1.1rem;
         display:block;
 
         &:hover{
-          color:#333;
-        }
+          color: $greyLight;
 
+        }
         &.btn-primary{
           margin:0;
-          color:#fff;
+          color:$white;
           padding:10px 15px;
-
-         // @include stylize-btn-small();
-
         }
-
-        /*&.btn-secondary{
-          @include stylize-btn-big();
-        }*/
       }
     }
   }
 }
-
 
 

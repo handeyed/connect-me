@@ -1,0 +1,44 @@
+h1, .h1 {
+  font-size: 3rem;
+  font-weight: 100;
+  letter-spacing: -0.5px;
+  line-height: 4.2rem;
+  margin: 10px 0 30px;
+
+  + hr{
+    width: 25%;
+    max-width: 110px;
+    height:3px;
+    margin:20px 0;
+    background:$mainColor;
+    display:inline-block;
+  }
+}
+h2, .h2 {
+  font-size: 3.5rem;
+  font-weight: 100;
+  line-height: 5.5rem;
+  margin-bottom: 20px;
+
+  + hr{
+    width: 25%;
+    max-width: 110px;
+    height:3px;
+    margin:20px 0;
+    background:$greyLight;
+    display:inline-block;
+  }
+
+}
+h3, .h3 {
+  font-size:1.4rem;
+  text-transform:uppercase;
+  letter-spacing:1px;
+  margin:10px 0;
+  font-weight:100;
+}
+h4, .h4 {
+  font-size:1.5rem;
+  margin:2rem 0 2.4rem;
+  font-weight:100;
+}

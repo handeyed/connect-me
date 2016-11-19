@@ -1,0 +1,65 @@
+a {
+  color: $mainColor;
+  text-decoration: none;
+  transition: all ease .2s;
+
+  &:hover {
+    color: $mainColorLight;
+  }
+}
+
+.btn-primary {
+  background: $mainColor none repeat scroll 0 0;
+  border-radius: 5px;
+  color: $white;
+  display: inline-block;
+  letter-spacing: 0.25rem;
+  line-height: 1.3rem;
+  margin: 10px 0;
+  padding: 15px 25px;
+  text-transform: uppercase;
+  transition: all 0.5s ease 0s;
+
+  &:hover {
+    background: $mainColorDark none repeat scroll 0 0;
+    text-decoration: none;
+  }
+  &.big {
+    font-size: 1.8rem;
+    letter-spacing: 0.2rem;
+    line-height: 1.8rem;
+    margin: 50px 0;
+    padding: 25px 35px;
+  }
+
+  &.btn-primary.outlined {
+    background:transparent;
+    color:$mainColor!important;
+    border:1px solid $mainColor;
+
+    &:hover {
+      background:$mainColorDark;
+      color:$white!important;
+      border:1px solid $mainColorDark;
+    }
+  }
+}
+
+.btn-secondary {
+  display: inline-block;
+  background: $secondaryColor none repeat scroll 0 0;
+  border-radius: 5px;
+  font-size: 0.85rem;
+  letter-spacing: 0.2rem;
+  line-height: 1.2rem;
+  margin: 20px 0;
+  padding: 10px 20px;
+  text-transform: uppercase;
+  color: #fff;
+  transition: all 0.5s ease 0s;
+
+  &:hover {
+    background: $secondaryColorDark none repeat scroll 0 0;
+    text-decoration: none;
+  }
+}
