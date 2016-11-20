@@ -52,12 +52,14 @@ blockquote {
   margin:auto;
   padding:0px;
 
-  p {
+  &> p,
+  .core p {
     margin-bottom:40px;
     font-family: $fontSerif;
   }
   cite p {
     font-size: $fontSizeSmall;
+    font-style: normal;
   }
 
 
@@ -72,4 +74,3 @@ blockquote {
   }
 }
 
-cite {font-style:normal;}

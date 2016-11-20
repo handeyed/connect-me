@@ -1,0 +1,196 @@
+/*-- RESPONSIVE --*/
+
+@media only screen
+and (min-width : 320px)
+and (max-width : 720px) {
+
+  #content {
+    transform: translateX(0) translateZ(0);
+    transition: transform .2s;
+    will-change: transform;
+
+    &.active {
+      transform: translateX(-60vw);
+      height: 100vh;
+      overflow: hidden;
+    }
+
+    #brand {
+      margin-top: 30px;
+    }
+    .menu-opener {
+      background: transparent;
+      cursor: pointer;
+      height: 64px;
+      right: 0;
+      position: fixed;
+      top: 0vh;
+      width: 10vh;
+      z-index: 9;
+
+      .menu-opener-inner {
+        background: $greyDark none repeat scroll 0 0;
+        height: .3rem;
+        width: 2rem;
+        margin: 50% 0;
+
+        &::before,
+        &::after {
+          background: $greyDark;
+          content: '';
+          display: block;
+          height: .3rem;
+          width: 2.75rem;
+          margin-top: 3px;
+          transition: all 0.2s ease 0s;
+        }
+
+        &::before {
+          -webkit-transform: translateY(-0.75rem);
+          -ms-transform: translateY(-0.75rem);
+          transform: translateY(-0.75rem);
+        }
+        &::after {
+          -webkit-transform: translateY(0.25rem);
+          -ms-transform: translateY(0.25rem);
+          transform: translateY(0.25rem);
+        }
+
+        &.active {
+          background: transparent;
+
+          &::before {
+            -webkit-transform: translateY(0rem) rotate(-45deg);
+            -ms-transform: translateY(0rem) rotate(-45deg);
+            transform: translateY(0rem) rotate(-45deg);
+          }
+          &::after {
+            -webkit-transform: translateY(-0.5rem) translateX(0rem) rotate(45deg);
+            -ms-transform: translateY(-0.5rem) translateX(0rem) rotate(45deg);
+            transform: translateY(-0.5rem) translateX(0rem) rotate(45deg);
+          }
+        }
+      }
+    }
+  }
+  #nav-bar {
+    position: absolute;
+    top: 0;
+    right:0;
+    width: 60vw;
+    min-height: 100vh;
+    background:$white;
+    padding:0;
+
+    ul.nav{
+      margin-top:20px;
+
+      li {
+        display:list-item;
+
+        a{
+          display:inline-block;
+          font-size:2rem;
+
+          &.btn-primary {
+            padding:15px 20px;
+            margin-top:30px;
+          }
+          &.nav-button {
+            display:block;
+          }
+        }
+      }
+
+    }
+  }
+
+
+  /*--*/
+
+
+  .bloc {
+    width:100%;
+  }
+  .right, .left {
+    float:none;
+    margin:20px 0;
+  }
+  .grid3 {
+    display:inline-block;
+
+    &> div {
+      max-width:100%;
+      margin:30px 0;
+    }
+  }
+
+  .Illustration {
+    width:100%;
+    max-width:100%;
+  }
+
+  blockquote {
+    padding: 15px 0;
+    width: 100%;
+  }
+  #content #testimonials {
+
+    padding:10vh 0;
+
+    &> * {
+      text-align:center;
+    }
+
+    blockquote {
+
+      padding:15px;
+      display: inline-block;
+      margin: auto;
+      width: 100%;
+
+      .avatar {
+        float: none;
+        width: 70%;
+        margin: 0 auto;
+        padding: 0;
+        text-align: center;
+      }
+    }
+
+    .slick-list {width:100%;}
+    .slick-dots {display:none!important;}
+
+  }
+
+
+  #pricing p.quote {
+    margin:40px 0;
+    padding-right:0;
+  }
+  #get-started #steps {
+    background:none;
+    min-height:0px;
+  }
+}
+
+/*-- Tablette only --*/
+@media only screen
+and (min-width : 481px)
+and (max-width : 720px) {
+}
+
+/*-- Phone only --*/
+@media only screen
+and (min-width : 320px)
+and (max-width : 480px) {
+
+  img {margin:auto;display:block}
+
+  #coming-soon ul.blue-bullets li {display:inline-block;}
+
+  #pricing img.apost {
+    margin: 60px auto 0;
+  }
+
+}

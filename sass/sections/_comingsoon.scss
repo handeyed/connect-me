@@ -1,0 +1,23 @@
+#coming-soon {
+  background: $black;
+  height:auto;
+  min-height:140px;
+  padding-bottom:10vh;
+
+  &> * {
+    text-align:center;
+  }
+  h2 {
+    color:$mainColor;
+    font-size:$fontSizeNormal;
+    margin:10px 0 30px;
+    line-height:2rem;
+  }
+  h3 {
+    color:$white;
+    margin:10px 0;
+  }
+  ul.blue-bullets {
+    color:$white;
+  }
+}

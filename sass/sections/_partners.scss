@@ -1,0 +1,23 @@
+#partners {
+  height:auto;
+  min-height:540px;
+  padding:10vh 0;
+
+  &> * {
+    text-align:center;
+  }
+  h2 {
+    color:$mainColor;
+  }
+  hr {
+    margin:50px 0
+  }
+  ul li {
+    margin:2vh 1vw;
+
+    img {
+      max-width: 170px;
+      width: 100%;
+    }
+  }
+}

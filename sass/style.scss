@@ -16,7 +16,14 @@
 
 @import 'plugins/slick';
 
+@import 'sections/leadIntro';
+@import 'sections/keypoints';
+@import 'sections/comingsoon';
 @import 'sections/testimonials';
+@import 'sections/highlights';
+@import 'sections/get-started';
+@import 'sections/pricing';
+@import 'sections/partners';
 @import 'sections/footer';
 
-@import 'old';
+@import 'layout/responsive';

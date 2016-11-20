@@ -1,0 +1,43 @@
+#highlights {
+  background:$black;
+  height:auto;
+  min-height:540px;
+  padding:10vh 0;
+
+  &> * {
+    text-align:center;
+  }
+  h2 {
+    color:$white;
+  }
+  h3 {
+    margin-top:35px;
+    color:$white;
+  }
+  h4 {
+    text-transform:uppercase;
+    margin:20px 0 5px;
+
+  }
+  p {color:$grey;}
+  .grid3 {
+    margin:90px 0;
+
+    div {
+      &:first-child h4 {
+        color:$secondaryColor;
+      }
+      &:first-child + * h4{
+        color:$validColor;
+      }
+      &:first-child + * + * h4{
+        color:$mainColor;
+      }
+
+      p {
+        padding:0 30px;
+        color:$white;
+      }
+    }
+  }
+}

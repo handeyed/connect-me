@@ -1,0 +1,36 @@
+#get-started {
+  height: auto;
+  min-height: 550px;
+  padding: 10vh 0;
+
+  & > * {
+    text-align: center;
+  }
+
+  #steps {
+    background: url("#{$get-path-to}img/Get-started.png") no-repeat scroll center bottom;
+    min-height: 300px;
+    width: 70%;
+
+    &.grid3 div {
+      margin-top: 150px;
+
+      h4 {
+        text-transform: uppercase;
+        color: $greyLight;
+      }
+
+      &.active {
+
+        img {
+          min-width: 110px;
+          margin-top: -30px;
+        }
+        h4 {
+          color: $secondaryColor;
+          font-size: 1.7rem;
+        }
+      }
+    }
+  }
+}

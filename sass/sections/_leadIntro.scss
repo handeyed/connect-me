@@ -1,0 +1,17 @@
+#leadIntro {
+  border-bottom:1px solid #D8D8D8;
+
+  hr {
+    background: $secondaryColor;
+  }
+  blockquote > p {
+
+    color:$secondaryColor;
+    margin-bottom:0px;
+    font-style:italic;
+
+  }
+  img {
+    margin-top:80px;
+  }
+}

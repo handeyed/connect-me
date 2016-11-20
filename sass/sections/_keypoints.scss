@@ -1,0 +1,24 @@
+.keypoint {
+  border-bottom:1px solid $greyLight;
+  background:$white;
+  padding:10vh 0;
+
+  h2 {
+    margin-top:10vh;
+    font-size:2.5rem;
+    line-height:3.5rem;
+    color:$mainColor;
+  }
+
+  hr {
+    background:$mainColor;
+  }
+
+  h3 {
+    color:$secondaryColor;
+  }
+
+  .Illustration {
+    margin-top:10vh;
+  }
+}
