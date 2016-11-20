@@ -167,7 +167,7 @@
                 <div class="wrapper">
                     <h3>Coming soon</h3>
                     <h2>WEARABLES & SELF TRACKING</h2>
-                    <ul class="blue-bullets list-inline">
+                    <ul class="blue-bullets">
                         <li><span></span>Track vital signs, fitness and lifestyle</li>
                         <li><span></span>Clients can record, monitor and sync data with wearables from fitness trackers and heart rate monitors to blood 
                         glucose measurements and blood pressure </li>
@@ -178,58 +178,58 @@
 
             <section id="testimonials">
                 <div class="wrapper">
-                <div class="testimonial-slide">
-                    <blockquote class="left">
-                    	<div class="avatar">
-                        	<img class="circle right" src="img/photo/Doctor.jpg" alt="Dr. Charlotte Middleton"/>
-                        </div>
-                        <div class="core">
-                            <p>
-                                Having a tool that allows patients to record their symptoms, concerns and questions between visits, has been
-                                invaluable.<br>
-                                I am then able to quickly export these notes into my clinical software during the patient visit.
-                            </p>
-                            <cite>
-                                <h3>Dr. Charlotte Middleton</h3>
-                                <h4>General practitioner, New South Wales</h4>
-                            </cite>
-                        </div>
-                    </blockquote> 
-                    <blockquote class="left">
-                    	<div class="avatar">
-                        	<img class="circle right" src="img/photo/Doctor.jpg" alt="Dr. Charlotte Middleton"/>
-                        </div>
-                        <div class="core">
-                            <p>
-                                Having a tool that allows patients to record their symptoms, concerns and questions between visits, has been
-                                invaluable.<br>
-                                I am then able to quickly export these notes into my clinical software during the patient visit.
-                            </p>
-                            <cite>
-                                <h3>Dr. Charlotte Middleton</h3>
-                                <h4>General practitioner, New South Wales</h4>
-                            </cite>
-                        </div>
-                    </blockquote> 
-                    <blockquote class="left">
-                    	<div class="avatar">
-                        	<img class="circle right" src="img/photo/Doctor.jpg" alt="Dr. Charlotte Middleton"/>
-                        </div>
-                        <div class="core">
-                            <p>
-                                Having a tool that allows patients to record their symptoms, concerns and questions between visits, has been
-                                invaluable.<br>
-                                I am then able to quickly export these notes into my clinical software during the patient visit.
-                            </p>
-                            <cite>
-                                <h3>Dr. Charlotte Middleton</h3>
-                                <h4>General practitioner, New South Wales</h4>
-                            </cite>
-                        </div>
-                    </blockquote> 
+                    <div class="testimonial-slide">
+                        <blockquote class="left">
+                            <div class="avatar">
+                                <img class="circle right" src="img/photo/Doctor.jpg" alt="Dr. Charlotte Middleton"/>
+                            </div>
+                            <div class="core">
+                                <p>
+                                    Having a tool that allows patients to record their symptoms, concerns and questions between visits, has been
+                                    invaluable.<br>
+                                    I am then able to quickly export these notes into my clinical software during the patient visit.
+                                </p>
+                                <cite>
+                                    <h3>Dr. Charlotte Middleton</h3>
+                                    <h4>General practitioner, New South Wales</h4>
+                                </cite>
+                            </div>
+                        </blockquote>
+                        <blockquote class="left">
+                            <div class="avatar">
+                                <img class="circle right" src="img/photo/Doctor.jpg" alt="Dr. Charlotte Middleton"/>
+                            </div>
+                            <div class="core">
+                                <p>
+                                    Having a tool that allows patients to record their symptoms, concerns and questions between visits, has been
+                                    invaluable.<br>
+                                    I am then able to quickly export these notes into my clinical software during the patient visit.
+                                </p>
+                                <cite>
+                                    <h3>Dr. Charlotte Middleton</h3>
+                                    <h4>General practitioner, New South Wales</h4>
+                                </cite>
+                            </div>
+                        </blockquote>
+                        <blockquote class="left">
+                            <div class="avatar">
+                                <img class="circle right" src="img/photo/Doctor.jpg" alt="Dr. Charlotte Middleton"/>
+                            </div>
+                            <div class="core">
+                                <p>
+                                    Having a tool that allows patients to record their symptoms, concerns and questions between visits, has been
+                                    invaluable.<br>
+                                    I am then able to quickly export these notes into my clinical software during the patient visit.
+                                </p>
+                                <cite>
+                                    <h3>Dr. Charlotte Middleton</h3>
+                                    <h4>General practitioner, New South Wales</h4>
+                                </cite>
+                            </div>
+                        </blockquote>
+                    </div>
+                    <div class="clear"></div>
                 </div>
-                </div>
-                <div class="clear"></div>
             </section>
             
             <section id="highlights">
@@ -263,20 +263,20 @@
             
             <section id="get-started">
                 <div class="wrapper">
-                    <h2>Get your clients started in <b>3</b> easy steps</h2>
+                    <h2>Get your clients started in <span>3</span> easy steps</h2>
                     <div id="steps" class="grid3">
-                    	<div class="one">
+                    	<div class="active">
                         <!-- All the SVG are to be included in code instead of .svg in order to change the color on hover/active -->
                         	<img src="img/Icon-Send.svg" />
                             <h4>Send</h4>
                             <p>You send an invitation to your client.</p>
                         </div>
-                    	<div class="two">
+                    	<div>
                         	<img src="img/Icon-Invite.svg" />
                             <h4>Invite</h4>
                             <p>Your client then receives a personal email invitation containing a unique link.</p>
                         </div>
-                    	<div class="three">
+                    	<div>
                         	<img src="img/Icon-Connect.svg" />
                             <h4>Connect</h4>
                             <p>You are now connected!</p>
@@ -405,9 +405,8 @@
             $("#content").toggleClass("active");
         });
         $("#steps div").click(function(){
-            this.className = {
-                three : 'active', one :'active', two : 'active'
-        }[this.className];
+            $( "#steps div" ).removeClass('active');
+            $(this).addClass(" active");
         });
 	});
 

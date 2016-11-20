@@ -1,9 +1,6 @@
 
   #content #testimonials {
-    background: $white;
     height: auto;
-    min-height: 250px;
-    padding: 15vh 0 5vh;
 
     blockquote {
       background: url("#{$get-path-to}img/elements/quote-icon.png") no-repeat scroll left top;
@@ -44,4 +41,5 @@
 
   .testimonial-slide {
     overflow:hidden;
+    margin:20vh 0;
   }

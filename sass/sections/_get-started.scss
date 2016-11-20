@@ -1,4 +1,4 @@
-#get-started {
+#content #get-started {
   height: auto;
   min-height: 550px;
   padding: 10vh 0;
@@ -7,15 +7,23 @@
     text-align: center;
   }
 
+  h2 {
+    color:$greyLight;
+
+    span {
+    color:$mainColor;
+    }
+  }
+
   #steps {
     background: url("#{$get-path-to}img/Get-started.png") no-repeat scroll center bottom;
     min-height: 300px;
     width: 70%;
+    position:relative;
 
     &.grid3 div {
       margin-top: 150px;
-      position:relative;
-      width: 100%;
+      cursor:pointer;
 
       h4 {
         text-transform: uppercase;
@@ -24,11 +32,19 @@
       p {
         display:none;
         position:absolute;
+        width:100%;
+        left:0;
+        bottom:-50px;
+        font-size:2rem;
+      }
+      img {
+        transition: width .2s ease;
+        max-height:100px;
       }
       &.active {
 
         img {
-          min-width: 110px;
+          width: 110px;
           margin-top: -30px;
         }
         h4 {
@@ -36,7 +52,7 @@
           font-size: 1.7rem;
         }
         p {
-          display:block;
+          display:inline-block;
         }
       }
     }
