@@ -802,7 +802,7 @@ footer .nav-footer-middle ul li {
   /* line 91, ../sass/layout/_responsive.scss */
   #nav-bar ul.nav li a {
     display: inline-block;
-    font-size: 2rem;
+    font-size: 1.5rem;
   }
   /* line 95, ../sass/layout/_responsive.scss */
   #nav-bar ul.nav li a.btn-primary {
