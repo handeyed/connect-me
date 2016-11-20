@@ -19,5 +19,9 @@
   }
   ul.blue-bullets {
     color:$white;
+
+    li {
+      display:inline;
+    }
   }
 }

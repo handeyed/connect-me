@@ -9,7 +9,7 @@ html {
 /* line 10, ../sass/global/_html.scss */
 html body {
   font-family: "Noto Sans", Helvetica, Arial, sans-serif;
-  background-color: #f5f4f0;
+  background-color: #F5F4F0;
   color: #7B7B7B;
   font-smooth: always;
   -webkit-font-smoothing: antialiased;
@@ -33,7 +33,7 @@ html body #content {
 html body #content section {
   height: auto;
   min-height: 20vh;
-  padding: 10vh 0;
+  padding: 15vh 0;
 }
 
 /* line 1, ../sass/nav/_menu.scss */
@@ -384,27 +384,28 @@ hr {
 }
 
 /* line 1, ../sass/sections/_leadIntro.scss */
-#leadIntro {
+#content #leadIntro {
   border-bottom: 1px solid #D8D8D8;
+  padding-bottom: 20vh;
 }
-/* line 4, ../sass/sections/_leadIntro.scss */
-#leadIntro hr {
+/* line 5, ../sass/sections/_leadIntro.scss */
+#content #leadIntro hr {
   background: #69D9DC;
 }
-/* line 7, ../sass/sections/_leadIntro.scss */
-#leadIntro blockquote > p {
+/* line 8, ../sass/sections/_leadIntro.scss */
+#content #leadIntro blockquote > p {
   color: #69D9DC;
   margin-bottom: 0px;
   font-style: italic;
 }
-/* line 14, ../sass/sections/_leadIntro.scss */
-#leadIntro img {
+/* line 15, ../sass/sections/_leadIntro.scss */
+#content #leadIntro img {
   margin-top: 80px;
 }
 
 /* line 1, ../sass/sections/_keypoints.scss */
 .keypoint {
-  border-bottom: 1px solid #AFAFAF;
+  border-bottom: 1px solid #F5F4F0;
   background: #fff;
   padding: 10vh 0;
 }
@@ -455,15 +456,16 @@ hr {
 #coming-soon ul.blue-bullets {
   color: #fff;
 }
+/* line 23, ../sass/sections/_comingsoon.scss */
+#coming-soon ul.blue-bullets li {
+  display: inline;
+}
 
 /* line 2, ../sass/sections/_testimonials.scss */
 #content #testimonials {
-  background: #fff;
   height: auto;
-  min-height: 250px;
-  padding: 15vh 0 5vh;
 }
-/* line 8, ../sass/sections/_testimonials.scss */
+/* line 5, ../sass/sections/_testimonials.scss */
 #content #testimonials blockquote {
   background: url("../img/elements/quote-icon.png") no-repeat scroll left top;
   background-size: 90px;
@@ -472,37 +474,38 @@ hr {
   flex-direction: row;
   padding: 0px 50px;
 }
-/* line 16, ../sass/sections/_testimonials.scss */
+/* line 13, ../sass/sections/_testimonials.scss */
 #content #testimonials blockquote p {
   color: #AFAFAF;
   margin-bottom: 40px;
 }
-/* line 21, ../sass/sections/_testimonials.scss */
+/* line 18, ../sass/sections/_testimonials.scss */
 #content #testimonials blockquote cite {
   font-style: normal;
 }
-/* line 25, ../sass/sections/_testimonials.scss */
+/* line 22, ../sass/sections/_testimonials.scss */
 #content #testimonials blockquote cite h3 {
   color: #FF9F5F;
 }
-/* line 29, ../sass/sections/_testimonials.scss */
+/* line 26, ../sass/sections/_testimonials.scss */
 #content #testimonials blockquote cite h4 {
   font-size: 1.2rem;
 }
-/* line 34, ../sass/sections/_testimonials.scss */
+/* line 31, ../sass/sections/_testimonials.scss */
 #content #testimonials .avatar {
   width: 25%;
   padding-right: 20px;
   margin-right: 20px;
 }
-/* line 39, ../sass/sections/_testimonials.scss */
+/* line 36, ../sass/sections/_testimonials.scss */
 #content #testimonials .avatar img {
   max-width: 200px;
 }
 
-/* line 45, ../sass/sections/_testimonials.scss */
+/* line 42, ../sass/sections/_testimonials.scss */
 .testimonial-slide {
   overflow: hidden;
+  margin: 20vh 0;
 }
 
 /* line 1, ../sass/sections/_highlights.scss */
@@ -557,50 +560,67 @@ hr {
 }
 
 /* line 1, ../sass/sections/_get-started.scss */
-#get-started {
+#content #get-started {
   height: auto;
   min-height: 550px;
   padding: 10vh 0;
 }
 /* line 6, ../sass/sections/_get-started.scss */
-#get-started > * {
+#content #get-started > * {
   text-align: center;
 }
 /* line 10, ../sass/sections/_get-started.scss */
-#get-started #steps {
+#content #get-started h2 {
+  color: #AFAFAF;
+}
+/* line 13, ../sass/sections/_get-started.scss */
+#content #get-started h2 span {
+  color: #FF9F5F;
+}
+/* line 18, ../sass/sections/_get-started.scss */
+#content #get-started #steps {
   background: url("../img/Get-started.png") no-repeat scroll center bottom;
   min-height: 300px;
   width: 70%;
-}
-/* line 15, ../sass/sections/_get-started.scss */
-#get-started #steps.grid3 div {
-  margin-top: 150px;
   position: relative;
-  width: 100%;
 }
-/* line 20, ../sass/sections/_get-started.scss */
-#get-started #steps.grid3 div h4 {
+/* line 24, ../sass/sections/_get-started.scss */
+#content #get-started #steps.grid3 div {
+  margin-top: 150px;
+  cursor: pointer;
+}
+/* line 28, ../sass/sections/_get-started.scss */
+#content #get-started #steps.grid3 div h4 {
   text-transform: uppercase;
   color: #AFAFAF;
 }
-/* line 24, ../sass/sections/_get-started.scss */
-#get-started #steps.grid3 div p {
+/* line 32, ../sass/sections/_get-started.scss */
+#content #get-started #steps.grid3 div p {
   display: none;
   position: absolute;
+  width: 100%;
+  left: 0;
+  bottom: -50px;
+  font-size: 2rem;
 }
-/* line 30, ../sass/sections/_get-started.scss */
-#get-started #steps.grid3 div.active img {
-  min-width: 110px;
+/* line 40, ../sass/sections/_get-started.scss */
+#content #get-started #steps.grid3 div img {
+  transition: width .2s ease;
+  max-height: 100px;
+}
+/* line 46, ../sass/sections/_get-started.scss */
+#content #get-started #steps.grid3 div.active img {
+  width: 110px;
   margin-top: -30px;
 }
-/* line 34, ../sass/sections/_get-started.scss */
-#get-started #steps.grid3 div.active h4 {
+/* line 50, ../sass/sections/_get-started.scss */
+#content #get-started #steps.grid3 div.active h4 {
   color: #69D9DC;
   font-size: 1.7rem;
 }
-/* line 38, ../sass/sections/_get-started.scss */
-#get-started #steps.grid3 div.active p {
-  display: block;
+/* line 54, ../sass/sections/_get-started.scss */
+#content #get-started #steps.grid3 div.active p {
+  display: inline-block;
 }
 
 /* line 1, ../sass/sections/_pricing.scss */
