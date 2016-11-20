@@ -385,32 +385,6 @@
 <script type="text/javascript" src="http://cdn.jsdelivr.net/jquery.slick/1.6.0/slick.min.js"></script>
 <script src="js/modernizr.custom.js"></script>
 <script src="js/custom.js"></script>
-<script>
-	$(document).ready(function(){
-
-		$('.testimonial-slide').slick({
-		  dots: true,
-		  arrows: false,
-		  infinite: true,
-		  autoplay: true,
-		  autoplaySpeed: 6000,
-		  speed: 800,
-		  slidesToShow: 1,
-		  adaptiveHeight: true,
-		  mobileFirst: true
-		});
-
-        $(".menu-opener").click(function(){
-            $(".menu-opener-inner").toggleClass("active")
-            $("#content").toggleClass("active");
-        });
-        $("#steps div").click(function(){
-            $( "#steps div" ).removeClass('active');
-            $(this).addClass(" active");
-        });
-	});
-
-</script>
 
 </body>
 </html>
