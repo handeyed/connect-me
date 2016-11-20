@@ -14,12 +14,17 @@
 
     &.grid3 div {
       margin-top: 150px;
+      position:relative;
+      width: 100%;
 
       h4 {
         text-transform: uppercase;
         color: $greyLight;
       }
-
+      p {
+        display:none;
+        position:absolute;
+      }
       &.active {
 
         img {
@@ -29,6 +34,9 @@
         h4 {
           color: $secondaryColor;
           font-size: 1.7rem;
+        }
+        p {
+          display:block;
         }
       }
     }

@@ -31,7 +31,7 @@
         <![endif]-->
 
         <link rel="stylesheet" href="assets/dist/normalize.min.css">
-        <link href="/css/style.css" rel="stylesheet" type="text/css" />
+        <link href="css/style.css" rel="stylesheet" type="text/css" />
 
         <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
         <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -265,23 +265,23 @@
                 <div class="wrapper">
                     <h2>Get your clients started in <b>3</b> easy steps</h2>
                     <div id="steps" class="grid3">
-                    	<div class="active">
+                    	<div class="one">
                         <!-- All the SVG are to be included in code instead of .svg in order to change the color on hover/active -->
                         	<img src="img/Icon-Send.svg" />
                             <h4>Send</h4>
+                            <p>You send an invitation to your client.</p>
                         </div>
-                    	<div>
+                    	<div class="two">
                         	<img src="img/Icon-Invite.svg" />
                             <h4>Invite</h4>
+                            <p>Your client then receives a personal email invitation containing a unique link.</p>
                         </div>
-                    	<div>
+                    	<div class="three">
                         	<img src="img/Icon-Connect.svg" />
                             <h4>Connect</h4>
+                            <p>You are now connected!</p>
                         </div>
                     </div>
-                    <p class="step-text-1">Your client then receives a personal email invitation containing a unique link.</p>
-                    <p class="step-text-2">Your client then receives a personal email invitation containing a unique link.</p>
-                    <p class="step-text-3">Your client then receives a personal email invitation containing a unique link.</p>
                 </div>
             </section>
 
@@ -370,7 +370,7 @@
                             </li>
                          </ul>
                     </nav>
-                    <p class="darkgrey small">&copy; 2016 ConnectMe. All rights reserved</p>
+                    <p>&copy; 2016 ConnectMe. All rights reserved</p>
                 </div>
             </footer>
         
@@ -384,7 +384,6 @@
 <!-- JavaScript -->
 <script type="text/javascript" src="http://cdn.jsdelivr.net/jquery.slick/1.6.0/slick.min.js"></script>
 <script src="js/modernizr.custom.js"></script>
-<script src="js/plugins.js"></script>
 <script src="js/custom.js"></script>
 <script>
 	$(document).ready(function(){
@@ -404,6 +403,11 @@
         $(".menu-opener").click(function(){
             $(".menu-opener-inner").toggleClass("active")
             $("#content").toggleClass("active");
+        });
+        $("#steps div").click(function(){
+            this.className = {
+                three : 'active', one :'active', two : 'active'
+        }[this.className];
         });
 	});
 

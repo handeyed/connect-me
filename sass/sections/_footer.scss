@@ -1,14 +1,18 @@
 footer {
   background: $mainColor;
   height:auto;
-  min-height:250px;
+  min-height:200px;
   padding:10vh 0;
 
   > * {
     text-align:center;
   }
+  p {
+    color:$black;
+  }
   a {
     color:#fff;
+    font-size:$fontSizeNormal;
   }
   .nav-footer-top ul li {
     margin:1vh .5vw

@@ -575,21 +575,32 @@ hr {
 /* line 15, ../sass/sections/_get-started.scss */
 #get-started #steps.grid3 div {
   margin-top: 150px;
+  position: relative;
+  width: 100%;
 }
-/* line 18, ../sass/sections/_get-started.scss */
+/* line 20, ../sass/sections/_get-started.scss */
 #get-started #steps.grid3 div h4 {
   text-transform: uppercase;
   color: #AFAFAF;
 }
-/* line 25, ../sass/sections/_get-started.scss */
+/* line 24, ../sass/sections/_get-started.scss */
+#get-started #steps.grid3 div p {
+  display: none;
+  position: absolute;
+}
+/* line 30, ../sass/sections/_get-started.scss */
 #get-started #steps.grid3 div.active img {
   min-width: 110px;
   margin-top: -30px;
 }
-/* line 29, ../sass/sections/_get-started.scss */
+/* line 34, ../sass/sections/_get-started.scss */
 #get-started #steps.grid3 div.active h4 {
   color: #69D9DC;
   font-size: 1.7rem;
+}
+/* line 38, ../sass/sections/_get-started.scss */
+#get-started #steps.grid3 div.active p {
+  display: block;
 }
 
 /* line 1, ../sass/sections/_pricing.scss */
@@ -687,7 +698,7 @@ hr {
 footer {
   background: #FF9F5F;
   height: auto;
-  min-height: 250px;
+  min-height: 200px;
   padding: 10vh 0;
 }
 /* line 7, ../sass/sections/_footer.scss */
@@ -695,14 +706,19 @@ footer > * {
   text-align: center;
 }
 /* line 10, ../sass/sections/_footer.scss */
-footer a {
-  color: #fff;
+footer p {
+  color: #4E4E4E;
 }
 /* line 13, ../sass/sections/_footer.scss */
+footer a {
+  color: #fff;
+  font-size: 1.5rem;
+}
+/* line 17, ../sass/sections/_footer.scss */
 footer .nav-footer-top ul li {
   margin: 1vh 0.5vw;
 }
-/* line 16, ../sass/sections/_footer.scss */
+/* line 20, ../sass/sections/_footer.scss */
 footer .nav-footer-middle ul li {
   margin: 20px 1.5vw;
 }
