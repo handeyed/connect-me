@@ -243,20 +243,21 @@ h4, .h4 {
 p {
   font-size: 1.5rem;
   line-height: 2.6rem;
+  margin: 1em 0;
 }
-/* line 5, ../sass/layout/_text.scss */
+/* line 6, ../sass/layout/_text.scss */
 p.small {
   font-size: 1.2rem;
 }
-/* line 8, ../sass/layout/_text.scss */
+/* line 9, ../sass/layout/_text.scss */
 p.serif {
   font-family: "Noto Serif", "Times New Roman", Times, serif;
 }
-/* line 11, ../sass/layout/_text.scss */
+/* line 12, ../sass/layout/_text.scss */
 p.italic {
   font-style: italic;
 }
-/* line 14, ../sass/layout/_text.scss */
+/* line 15, ../sass/layout/_text.scss */
 p.quote {
   font-size: 1.2em;
   font-weight: 100;
@@ -264,21 +265,21 @@ p.quote {
   margin: 20px 0 -5px;
 }
 
-/* line 23, ../sass/layout/_text.scss */
+/* line 24, ../sass/layout/_text.scss */
 ul {
   list-style-image: url("../img/elements/dot.png");
   padding-left: 10px;
 }
-/* line 27, ../sass/layout/_text.scss */
+/* line 28, ../sass/layout/_text.scss */
 ul li {
   padding-left: 10px;
   margin-bottom: 10px;
 }
-/* line 32, ../sass/layout/_text.scss */
+/* line 33, ../sass/layout/_text.scss */
 ul.blue-bullets {
   list-style-image: url("../img/elements/dot-blue.png");
 }
-/* line 35, ../sass/layout/_text.scss */
+/* line 36, ../sass/layout/_text.scss */
 ul.blue-bullets li > span {
   background: url("../img/elements/dot-blue.png");
   width: 6px;
@@ -286,34 +287,34 @@ ul.blue-bullets li > span {
   display: inline-block;
   margin: 2px 7px 2px 0;
 }
-/* line 44, ../sass/layout/_text.scss */
+/* line 45, ../sass/layout/_text.scss */
 ul.list-inline li {
   display: inline-block;
 }
 
-/* line 50, ../sass/layout/_text.scss */
+/* line 51, ../sass/layout/_text.scss */
 blockquote {
   width: 100%;
   margin: auto;
   padding: 0px;
 }
-/* line 55, ../sass/layout/_text.scss */
+/* line 56, ../sass/layout/_text.scss */
 blockquote > p,
 blockquote .core p {
   margin-bottom: 40px;
   font-family: "Noto Serif", "Times New Roman", Times, serif;
 }
-/* line 60, ../sass/layout/_text.scss */
+/* line 61, ../sass/layout/_text.scss */
 blockquote cite p {
   font-size: 1.2rem;
   font-style: normal;
 }
-/* line 66, ../sass/layout/_text.scss */
+/* line 67, ../sass/layout/_text.scss */
 blockquote h3 {
   text-transform: inherit;
   font-size: 2rem;
 }
-/* line 70, ../sass/layout/_text.scss */
+/* line 71, ../sass/layout/_text.scss */
 blockquote h4 {
   text-transform: uppercase;
   font-size: 1rem;
